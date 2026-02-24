@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<>
+<head>
   <meta charset="UTF-8">
   <title>Job Application Tracker</title>
   <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
+<body>
 
-    <div class="container">
+  <div class="container">
 
-      <!-- Header -->
-      <div class="header">
-        <h1>Available Jobs <span>8 jobs</span></h1>
-        <script src="script.js"></script>
-        <div class="filters">
-          <span>All</span>
-          <span>Interview</span>
-          <span>Rejected</span>
-        </div>
+    <!-- Header Section -->
+    <header class="header">
+      <h1>Available Jobs <span>(8 jobs)</span></h1>
+      <div class="filter-menu">
+        <button>All</button>
+        <button>Interview</button>
+        <button>Rejected</button>
       </div>
+    </header>
 
-      <!-- Stats -->
-      <div class="stats">
-        <div class="stat-box">
-          <p>Total</p>
-          <h2>8</h2>
-        </div>
-        <div class="stat-box">
-          <p>Interview</p>
-          <h2 id="interviewCount">0</h2>
-        </div>
-        <div class="stat-box">
-          <p>Rejected</p>
-          <h2 id="rejectedCount">0</h2>
-        </div>
+    <!-- Statistics Section -->
+    <section class="stats">
+      <div class="stat-card">
+        <p>Total</p>
+        <h2>8</h2>
       </div>
+      <div class="stat-card">
+        <p>Interview</p>
+        <h2 id="interviewCount">0</h2>
+      </div>
+      <div class="stat-card">
+        <p>Rejected</p>
+        <h2 id="rejectedCount">0</h2>
+      </div>
+    </section>
 
-      <!-- Jobs -->
-      <div id="jobs" class="jobs"></div>
+    <!-- Job Cards -->
+    <section id="jobList" class="job-list"></section>
 
-    </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 
 </html>
