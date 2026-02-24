@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Available Jobs <span>8 jobs</span></h1>
+      <div class="filters">
+        <span>All</span>
+        <span>Interview</span>
+        <span>Rejected</span>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat-box">
+        <p>Total</p>
+        <h2>8</h2>
+      </div>
+      <div class="stat-box">
+        <p>Interview</p>
+        <h2 id="interviewCount">0</h2>
+      </div>
+      <div class="stat-box">
+        <p>Rejected</p>
+        <h2 id="rejectedCount">0</h2>
+      </div>
+    </div>
+
+    <!-- Jobs -->
+    <div id="jobs" class="jobs"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
